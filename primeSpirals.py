@@ -1,23 +1,15 @@
 #!/usr/bin/env python2
 '''
-Just a Game of Primes - I coded the Ulam Prime Spiral.
-Nifty!
+Just a Game of Primes - I coded the Ulam Prime Spiral,
+and blogged about it here:
+
+    http://users.softlab.ntua.gr/~ttsiod/primes.html
+
 '''
 import sys
 import math
 import itertools
 
-
-# def primes():
-#     yield 2
-#     primesSoFar = [2]
-#     for i in xrange(3, 100000, 2):
-#         for k in (ii for ii in primesSoFar if ii <= int(math.sqrt(i))):
-#             if 0 == i % k:
-#                 break
-#         else:
-#             primesSoFar.append(i)
-#             yield i
 
 def primeSpiralPixels():
     yield 255  # 1 is not prime (white)
